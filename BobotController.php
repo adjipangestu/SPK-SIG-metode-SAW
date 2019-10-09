@@ -401,43 +401,12 @@ class BobotController extends Controller
 
     public function json()
     {
+
         $jsonString = file_get_contents(base_path('resources/lang/en/peta.geojson'));
         $data = json_decode($jsonString, true);
 
         return $data;
         # code...
     }
-
-
-    public function map_poligon($status_saw)
-    {   
-        //$warna = array('#2ecc71', '#f1c40f', '#f39c12', '#f94503');
-        $response = array();
-        $stat = $status_saw;
-        if ($stat >= 10.00 && $stat <= 40.00) {
-            return "Merah";
-            } else {
-                if($stat >= 40.01 && $stat <= 70.00){
-                    return "Kuning";
-                    } else {
-                        if($stat >= 70.01 && $stat <= 100.00){
-                            return "Ijo";
-                        } else {
-                            if ($stat > 100.00){
-                                return "biru";
-                            }
-                        }
-                    }
-                }
-
-        return $stat;
-
-        // $response['stat'] = $stat;
-        // echo json_encode($response);
-        // return view('gpoligon', compact('stat'));
-
-    }
-    
-
 
 }
