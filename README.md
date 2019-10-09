@@ -1,5 +1,9 @@
 # SPK (Sistem Informasi Geografis) SIG metode SAW
 
+## SCREENSHOT
+
+![contoh](https://github.com/adjipangestu/SPK-SIG-metode-SAW/blob/master/Screenshot%20from%202019-10-09%2009-43-34.png)
+
 ## REST FULL API SAW 
 
 ```
